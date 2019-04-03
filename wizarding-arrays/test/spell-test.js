@@ -9,14 +9,14 @@ describe('Wizard spells', () => {
     assert.equal(spell.description, 'makes things levitate');
   });
 
-  it.skip('can be executed', () => {
+  it('can be executed', () => {
     const spell = new Spell('wingardium leviosa', 'makes things levitate');
     const target = "book";
 
     assert.equal(spell.execute(target), "Success! The book is levitating.");
   });
 
-  it.skip('can execute against multiple targets', () => {
+  it('can execute against multiple targets', () => {
     const spell = new Spell('wingardium leviosa', 'makes things levitate');
 
     const target1 = "book";

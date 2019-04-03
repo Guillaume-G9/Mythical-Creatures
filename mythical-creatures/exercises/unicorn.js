@@ -1,6 +1,6 @@
-class Unicorn {
-  constructor() {
+class Unicorn{
+  constructor(name){
+    this.name = name;
+    this.color = color;
   }
 }
-
-module.exports = Unicorn;
