@@ -27,43 +27,43 @@ describe('Wizard', function() {
     assert.equal(wizard.incantation('chown lumos'), 'CHOWN LUMOS');
   });
 
-  it.skip('should has lots of root powers', function() {
+  it('should has lots of root powers', function() {
     var wizard = new Wizard({name: 'Jhun', bearded: false});
     assert.equal(wizard.incantation('Expecto Patronum'), 'EXPECTO PATRONUM');
   });
 
-  it.skip('should start rested', function() {
+  it('should start rested', function() {
     // create wizard
     var wizard = new Wizard({name: 'Tom'})
     // assert isRested returns true
-    assert.equal(wizard.isRested == true)
+    assert.equal(wizard.isRested, true)
   });
 
-  it.skip('should be able to cast spells', function() {
+  it('should be able to cast spells', function() {
     // create wizard
     var wizard = new Wizard({name:'Harold'})
     // assert wizard.cast() returns 'MAGIC BULLET'
-    assert.equal(wizard.cast('MAGIC BULLET'))
+    assert.equal(wizard.cast(), "MAGIC BULLET");
   });
 
-  it.skip('should only be able to cast 3 spells', function() {
+  it('should only be able to cast 3 spells', function() {
     // create wizard
     var wizard = new Wizard({name:'Tom'});
     // assert isRested is true
-    assert.equal(wizard.isRested = true);
+    assert.equal(wizard.isRested, true);
     // cast()
     wizard.cast();
     // assert isRested is true
-    assert.equal(wizard.isRested = true);
+    assert.equal(wizard.isRested, true);
     // cast()
     wizard.cast();
     // assert isRested is true
-    assert.equal(wizard.isRested = true);
+    assert.equal(wizard.isRested, true);
     // cast()
     wizard.cast();
     // assert isRested is false
-    assert.equal(wizard.isRested = false);
+    assert.equal(wizard.isRested, false);
     // assert cast() returns 'I SHALL NOT CAST!'
-    assert.equal(wiz)
+    assert.equal(wizard.cast(), "I SHALL NOT CAST!");
   });
 });

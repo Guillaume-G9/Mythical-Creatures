@@ -73,9 +73,10 @@ describe('Werewolf', function() {
     // your code here
     var werewolf = new Werewolf ('Charles');
     var victim = new Victim ('Harry');
-    assert.equal(werewolf.human = false);
+    werewolf.change()
+    assert.equal(werewolf.hungry, true);
     werewolf.eat(victim);
-    assert.equal(werewolf.hungry, false);
+    assert.equal(victim.alive, false);
 
   });
 
@@ -90,17 +91,18 @@ describe('Werewolf', function() {
     // your code here
     var werewolf = new Werewolf ('CHAD');
     var victim = new Victim('Elizabeth');
-    assert.equal(werewolf.human = false)
+    werewolf.change()
     werewolf.eat(victim);
-    werewolf.human = true;
+    assert.equal(werewolf.human, true)
   });
 
   it('should not be able to consume victim in human form', function() {
     // your code here
     var werewolf = new Werewolf ('Tiffany');
     var victim = new Victim ('Robert');
-    assert.equal(werewolf.wolf = true);
-    assert.equal(werewolf.human = false)
+    werewolf.change()
+    assert.equal(werewolf.wolf, true);
+    assert.equal(werewolf.human, false)
     werewolf.eat(victim);
   });
 });
@@ -126,7 +128,7 @@ describe('Victim', function() {
     assert.equal(victim.alive, true);
   });
 
-  it.skip('should be dead after being eaten', function() {
+  it('should be dead after being eaten', function() {
     var werewolf = new Werewolf('TayTay');
     var victim = new Victim('TayTay');
     werewolf.change();

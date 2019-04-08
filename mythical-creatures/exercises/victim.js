@@ -1,8 +1,10 @@
 class Victim{
-  constructor(name, stoned){
+  constructor(name){
     this.name = name;
     this.alive = true;
-    this.stoned = stoned;
   }
 }
+
+// all tests passed
+
 module.exports = Victim;

@@ -12,32 +12,32 @@ describe('Unicorn', function() {
     assert.isObject(unicorn);
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('Bree');
     assert.equal(unicorn.name, 'Bree');
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('Pam');
     assert.equal(unicorn.name, 'Pam');
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('TayTay', 'blue');
     assert.equal(unicorn.color, 'blue');
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('Louisa');
     assert.equal(unicorn.color, 'white');
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('Steve', 'red');
     assert.equal(unicorn.isWhite(), false);
   });
 
-  it('read the assertion idiot', function() {
+  it('insert test here', function() {
     var unicorn = new Unicorn('Brenna');
     assert.equal(unicorn.says('Wonderful!'), '**;* Wonderful! *;**');
     assert.equal(unicorn.says('Batman has a great smile'), '**;* Batman has a great smile *;**');

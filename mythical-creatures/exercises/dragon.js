@@ -13,4 +13,6 @@ class Dragon{
   }
 }
 
+// passed all tests
+
 module.exports = Dragon;

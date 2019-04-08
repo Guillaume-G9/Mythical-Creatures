@@ -21,4 +21,6 @@ class Hobbit{
   }
 }
 
+// passes all tests
+
 module.exports = Hobbit;

@@ -8,4 +8,6 @@ class Vampire{
   }
 }
 
+//all tests passing
+
 module.exports = Vampire;
