@@ -11,11 +11,12 @@ class Sphinx{
     } 
   } 
   attemptAnswer(attempted) {
-    this.riddles.forEach(i => {
-      if (attempted === this.riddles.answer){
-      this.riddles.splice(i,1)
-    };
-    })
+      for (let i = 0; i < this.riddles.length; i++) {
+        if(attempted === this.riddles[i].answer){
+          this.riddles.splice(i,1)
+        }
+        this.response()
+      }
   }
   response(){
     return `That wasn't that hard, I bet you don't get the next one`;
