@@ -3,11 +3,12 @@ class Spell {
     this.name = name;
     this.description = description;
   }
-  execute(target){
-    for(var i = 0; i < target.length; i++)
-    return `Success! The ${target} is levitating.`
-
+  execute(targets){
+    for(var i = 0; i < targets.length; i++){
+      return `Success! The ${targets[i]} is levitating.`
+    }
   }
+
 }
 
 module.exports = Spell;
