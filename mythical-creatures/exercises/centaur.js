@@ -1,6 +1,6 @@
 class Centaur{
   constructor(name,breed){
-    this.name = 'trolololo';
+    this.name = name;
     this.breed = breed;
     this.cranky = false;
     this.standing = true;
@@ -12,7 +12,7 @@ class Centaur{
       if(this.cranky === false){
         return 'Twang!!!'
       } else {
-        return 'NO! No! ';
+        return 'NO!';
       }
     } 
   run(){

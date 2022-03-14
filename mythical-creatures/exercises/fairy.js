@@ -30,8 +30,8 @@ class Fairy{
     this.humanWards = this.humanWards.concat(baby)
     baby.disposition = 'Malicious';
     }else{
-      this.disposition = 'Good natured'
-      return baby;
+     // this.disposition = 'Good natured'
+     
     }
   }
 }

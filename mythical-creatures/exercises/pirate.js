@@ -6,9 +6,9 @@ class Pirate{
     this.karmaHits = 0;
     this.booty = 0;
   }commitHeinousAct(){
-    this.karmaHits++
+    
     if(this.karmaHits >= 3){
-      this.cursed = true;
+      this.cursed = false;
     }
   }robShip(){
     this.booty = 100;

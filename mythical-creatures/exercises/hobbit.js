@@ -12,8 +12,8 @@ class Hobbit{
     }
   } celebrateBirthday(){
     this.age++
-    if(this.age >= 33){
-      this.adult = true;
+    if(this.age == 33){
+      this.adult = false;
     } 
     
   }

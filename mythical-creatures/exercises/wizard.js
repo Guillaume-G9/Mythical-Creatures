@@ -1,7 +1,7 @@
 class Wizard {
   constructor(wizObj) {
     this.name = wizObj.name;
-    this.isRested = false;
+    this.isRested = 'false';
     this.numSpells = 10;
     if (wizObj.bearded == undefined) {
       this.bearded = false;

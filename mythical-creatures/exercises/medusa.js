@@ -4,7 +4,7 @@ class Medusa{
     this.statues = [];
   } stare(victim) {
     this.statues.push(victim);
-    victim.stoned = true;
+    victim.stoned = false;
     if(this.statues.length > 3) {
       this.statues[0].stoned = false;
       this.statues.shift();

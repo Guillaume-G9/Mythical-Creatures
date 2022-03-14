@@ -8,7 +8,7 @@ class Dragon{
   } eat(){
     this.eatenVillager++
     if (this.eatenVillager >= 3){
-     // this.hungry = false;
+     
     }
   }
 }
