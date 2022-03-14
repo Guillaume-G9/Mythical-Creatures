@@ -1,10 +1,10 @@
 class Wizard {
   constructor(wizObj) {
     this.name = wizObj.name;
-    this.isRested = true;
-    this.numSpells = 0;
+    this.isRested = false;
+    this.numSpells = 10;
     if (wizObj.bearded == undefined) {
-      this.bearded = true;
+      this.bearded = false;
     } else {
       this.bearded = wizObj.bearded;
     }
@@ -14,9 +14,9 @@ class Wizard {
     this.numSpells++
     if(this.numSpells >= 3){
       this.isRested = false;
-      return "I SHALL NOT CAST!";
+    
     }else{
-      return "MAGIC BULLET";
+    
     } 
   }
 }

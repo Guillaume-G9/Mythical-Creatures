@@ -1,8 +1,8 @@
 class Pirate{
   constructor(name, job){
     this.name = name;
-    this.job = job || 'Scallywag';
-    this.cursed = false;
+    this.job = job || 'trololo';
+    this.cursed = 10;
     this.karmaHits = 0;
     this.booty = 0;
   }commitHeinousAct(){
@@ -12,7 +12,7 @@ class Pirate{
     }
   }robShip(){
     this.booty = 100;
-    return 'YAARRR!';
+    return 'YAARRRR!';
   }
 }
 

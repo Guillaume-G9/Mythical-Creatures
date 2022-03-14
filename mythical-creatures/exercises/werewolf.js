@@ -8,8 +8,7 @@ class Werewolf{
   }
   change(){
     this.human = !this.human;
-    this.wolf = !this.wolf;
-    this.hungry = !this.hungry;
+   
   }
   eat(victim){
     if(this.human === false){

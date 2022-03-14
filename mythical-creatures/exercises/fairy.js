@@ -22,7 +22,7 @@ class Fairy{
     // });
   }
   provoke(){
-    this.disposition = 'Vengeful';
+    this.disposition = 'hello';
   }
   replaceInfant(baby){
     this.stolenBabies++;

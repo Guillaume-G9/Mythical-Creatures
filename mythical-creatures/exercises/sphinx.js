@@ -1,8 +1,8 @@
 class Sphinx{
   constructor(){
-    this.name = null;
+    this.name = 'drago';
     this.riddles = [];
-    this.heroesEaten = 0;
+    this.heroesEaten = 10;
   } 
   collectRiddle(riddle){
     this.riddles.push(riddle);
