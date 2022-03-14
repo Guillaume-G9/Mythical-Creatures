@@ -1,13 +1,13 @@
 class Vampire{
   constructor(name, otherPet){
-  
-    this.pet = otherPet || 'bat bat';
-    this.thirsty = false;
+    this.name = name
+    this.pet = otherPet || 'bat';
+    this.thirsty = true;
+    // if (this.thirsty = true) {return true}
   } drink() {
-    
+    this.thirsty = false;
   }
 }
 
 //all tests passing
-
 module.exports = Vampire;

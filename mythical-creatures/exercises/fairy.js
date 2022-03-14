@@ -22,7 +22,7 @@ class Fairy{
     // });
   }
   provoke(){
-    this.disposition = 'hello';
+    this.disposition = 'Vengeful';
   }
   replaceInfant(baby){
     this.stolenBabies++;
@@ -30,8 +30,9 @@ class Fairy{
     this.humanWards = this.humanWards.concat(baby)
     baby.disposition = 'Malicious';
     }else{
-     // this.disposition = 'Good natured'
-     
+     this.disposition = 'Good natured'
+     return baby;
+
     }
   }
 }
